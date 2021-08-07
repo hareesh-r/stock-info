@@ -1,0 +1,22 @@
+.PopCompanies {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: calc(100% - 90px);
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 0px;
+    background: #FFFFFF;
+    box-shadow: -5px 5px 10px #a6a6a6,
+        -5px 0px 10px #000;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+}

@@ -10,6 +10,8 @@
         -5px -5px 10px #ffffff;
     margin-bottom: 30px;
     height: 75px;
+    position: sticky;
+    top: 0;
 
 }.Search input {
     outline-width: 0px;
@@ -28,4 +30,7 @@
     color:#fff;
     margin-left: -63px;
     cursor: pointer;
+}.Search h2 {
+    position: absolute;
+    left: 50px;
 }

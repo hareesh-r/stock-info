@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Graph from './components/Graph';
+import PopCompanies from './components/PopCompanies';
 import Search from "./components/Search"
 import Sidebar from './components/Sidebar';
 
@@ -28,6 +30,8 @@ export class App extends Component {
         <Sidebar />
         <div className="main">
             <Search />
+            <Graph />
+            <PopCompanies />
         </div>
       </div>
     )
