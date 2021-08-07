@@ -1,0 +1,17 @@
+npm install -g firebase-tools
+
+firebase login
+
+firebase init
+
+
+{
+  "hosting": {
+    "site": "stock-info",
+
+    "public": "public",
+    ...
+  }
+}
+
+firebase deploy --only hosting:stock-info
