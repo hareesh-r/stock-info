@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Search from "./components/Search"
+import Sidebar from './components/Sidebar';
 
 export class App extends Component {
   constructor(){
@@ -6,15 +8,6 @@ export class App extends Component {
       this.state={
           searchWord: 'AAPL'
       }
-  }
-
-  getStocks(stockName){
-    fetch(stockName)
-      .then(response => response.json())
-      .then(data => {
-        this.setState({stocks: data});
-      console.log(data);
-    })
   }
 
   render() {
@@ -31,10 +24,12 @@ export class App extends Component {
 
     return (
       <div>
-        <h1>Hello, world!</h1>
-        <input onChange={(e)=>this.setState({searchWord:e.target.value})} type="text"/>
-        <button onClick={()=>this.getStocks(DAILY)}>Get Stocks</button>
+
+        <Sidebar />
+        <div className="main">
+            <Search />
         </div>
+      </div>
     )
   }
 }

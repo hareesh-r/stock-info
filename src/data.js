@@ -10517,9 +10517,126 @@ const GLOBAL_QUOTE = {
         "09. change": "-31.0500",
         "10. change percent": "-0.9197%"
     }
-}
+};
+
+const AUTO_COMPLETE = {
+    "bestMatches": [
+        {
+            "1. symbol": "AMAL",
+            "2. name": "Amalgamated Financial Corp",
+            "3. type": "Equity",
+            "4. region": "United States",
+            "5. marketOpen": "09:30",
+            "6. marketClose": "16:00",
+            "7. timezone": "UTC-04",
+            "8. currency": "USD",
+            "9. matchScore": "0.8571"
+        },
+        {
+            "1. symbol": "AMAAX",
+            "2. name": "AB MASSACHUSETTS PORTFOLIO CLASS A",
+            "3. type": "Mutual Fund",
+            "4. region": "United States",
+            "5. marketOpen": "09:30",
+            "6. marketClose": "16:00",
+            "7. timezone": "UTC-04",
+            "8. currency": "USD",
+            "9. matchScore": "0.7500"
+        },
+        {
+            "1. symbol": "AMABX",
+            "2. name": "AB MASSACHUSETTS PORTFOLIO CLASS B",
+            "3. type": "Mutual Fund",
+            "4. region": "United States",
+            "5. marketOpen": "09:30",
+            "6. marketClose": "16:00",
+            "7. timezone": "UTC-04",
+            "8. currency": "USD",
+            "9. matchScore": "0.7500"
+        },
+        {
+            "1. symbol": "AMACX",
+            "2. name": "AB MASSACHUSETTS PORTFOLIO CLASS C",
+            "3. type": "Mutual Fund",
+            "4. region": "United States",
+            "5. marketOpen": "09:30",
+            "6. marketClose": "16:00",
+            "7. timezone": "UTC-04",
+            "8. currency": "USD",
+            "9. matchScore": "0.7500"
+        },
+        {
+            "1. symbol": "AMADF",
+            "2. name": "Amadeus IT Holding SA",
+            "3. type": "Equity",
+            "4. region": "United States",
+            "5. marketOpen": "09:30",
+            "6. marketClose": "16:00",
+            "7. timezone": "UTC-04",
+            "8. currency": "USD",
+            "9. matchScore": "0.7500"
+        },
+        {
+            "1. symbol": "AMADX",
+            "2. name": "American Century Disciplined Core Val Fd USD Class A",
+            "3. type": "Mutual Fund",
+            "4. region": "United States",
+            "5. marketOpen": "09:30",
+            "6. marketClose": "16:00",
+            "7. timezone": "UTC-04",
+            "8. currency": "USD",
+            "9. matchScore": "0.7500"
+        },
+        {
+            "1. symbol": "AMADY",
+            "2. name": "Amadeus IT Group S.A.",
+            "3. type": "Equity",
+            "4. region": "United States",
+            "5. marketOpen": "09:30",
+            "6. marketClose": "16:00",
+            "7. timezone": "UTC-04",
+            "8. currency": "USD",
+            "9. matchScore": "0.7500"
+        },
+        {
+            "1. symbol": "AMAGX",
+            "2. name": "AMANA GROWTH FUND INVESTOR SHARES",
+            "3. type": "Mutual Fund",
+            "4. region": "United States",
+            "5. marketOpen": "09:30",
+            "6. marketClose": "16:00",
+            "7. timezone": "UTC-04",
+            "8. currency": "USD",
+            "9. matchScore": "0.7500"
+        },
+        {
+            "1. symbol": "AMAIX",
+            "2. name": "ALLIANCEBERNSTEIN DYNAMIC ALL MARKET FUND CLASS I",
+            "3. type": "Mutual Fund",
+            "4. region": "United States",
+            "5. marketOpen": "09:30",
+            "6. marketClose": "16:00",
+            "7. timezone": "UTC-04",
+            "8. currency": "USD",
+            "9. matchScore": "0.7500"
+        },
+        {
+            "1. symbol": "AMA1.FRK",
+            "2. name": "Altech Advanced Materials AG",
+            "3. type": "Equity",
+            "4. region": "Frankfurt",
+            "5. marketOpen": "08:00",
+            "6. marketClose": "20:00",
+            "7. timezone": "UTC+02",
+            "8. currency": "EUR",
+            "9. matchScore": "0.6667"
+        }
+    ]
+};
 
 
+export default AUTO_COMPLETE;
+export default GLOBAL_QUOTE;
 export default MONTHLY;
 export default WEEKLY;
 export default DAILY;
