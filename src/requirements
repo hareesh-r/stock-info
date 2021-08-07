@@ -15,3 +15,5 @@ firebase init
 }
 
 firebase deploy --only hosting:stock-info
+
+npm install axios --save
