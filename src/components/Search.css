@@ -12,6 +12,7 @@
     height: 75px;
     position: sticky;
     top: 0;
+    z-index: 1;
 
 }.Search input {
     outline-width: 0px;

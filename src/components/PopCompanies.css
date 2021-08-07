@@ -2,10 +2,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    height: calc(100% - 90px);
+    height: calc(100% - 70px);
     width: 160px;
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     bottom: 0;
     right: 0;
     background-color: #FFFFFF;

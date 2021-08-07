@@ -5,7 +5,26 @@ export default class PopCompanies extends Component {
     render() {
         return (
             <div className="PopCompanies">
-                Popular Companies Here
+                <div>Facebook</div>
+                <div>Apple</div>
+                <div>Netflix</div>
+                <div>Tesla</div>
+                <div>Tata</div>
+                <div>MicroSoft</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         )
     }
