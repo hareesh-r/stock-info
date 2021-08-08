@@ -25,13 +25,13 @@ export default class Graph extends Component {
                     height={300}
                     width={700}
                     data={{
-                        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+                        labels: this.props.datapoints,
                         datasets: [
                             {
                                 fill: true,
                                 cubicInterpolationMode: "monotone",
-                                label: `Graph Name`,
-                                data: [5, 10, 5, 15, 20, 9, 16, 5, 3, 47, 92, 1, 34, 52, 19],
+                                label: this.props.graphname,
+                                data: this.props.datapoints2,
                                 backgroundColor: this.state.gradient,
                                 borderColor: [
                                     '#92CBAF',
