@@ -27,6 +27,13 @@
     align-items: center;
     cursor: pointer;
 }
+.PopCompanies>div:hover {
+    background-color: #51C58E;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.5);
+    border-radius: 3px;
+}
 
 @media (max-width: 500px) {
     .PopCompanies {

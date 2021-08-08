@@ -26,13 +26,13 @@ export class App extends Component {
 
     return (
       <div>
-
-        <Sidebar />
         <div className="main">
           <Search />
           <Graph />
           <PopCompanies />
         </div>
+        <Sidebar />
+
       </div>
     )
   }
