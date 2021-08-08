@@ -14,44 +14,29 @@ export class App extends Component {
       datapoints2: [],
     }
   }
-  handler = (word,ticker) => {
-    this.setState({searchWord: word,ticker:ticker})
+  handler = (word, ticker) => {
+    this.setState({ searchWord: word, ticker: ticker })
   }
   setDatapoints = (datapoints) => {
-    this.setState({datapoints: datapoints})
+    this.setState({ datapoints: datapoints })
   }
   setDatapoints2 = (datapoints2) => {
-    this.setState({datapoints2: datapoints2})
+    this.setState({ datapoints2: datapoints2 })
   }
-
-  componentDidUpdate(){
-    this.refs.child.changeState(this.state.ticker,this.state.searchWord)
-    console.log(this.state.datapoints)
+  componentDidUpdate() {
+    this.refs.child.changeState(this.state.ticker, this.state.searchWord)
   }
-
   render() {
-
-    // const DAILY = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${this.state.searchWord}&apikey=CACFBGOGRJ9ZLNDH`
-
-    // const WEEKLY = `https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=${this.state.searchWord}apikey=CACFBGOGRJ9ZLNDH`
-
-    // const MONTHLY = `https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=${this.state.searchWord}apikey=CACFBGOGRJ9ZLNDH`
-
-    // const GLOBAL_QUOTE = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${this.state.searchWord}&apikey=CACFBGOGRJ9ZLNDH`
-
-    // const AUTO_COMPLETE = `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${this.state.searchWord}&apikey=CACFBGOGRJ9ZLNDH`
-
     return (
       <div>
         <div className="main">
-          <Search ref="child" handler={this.handler} searchWord={this.state.searchWord}/>
-          <Graph graphname={this.state.ticker} datapoints={this.state.datapoints} datapoints2={this.state.datapoints2}/>
-          <PopCompanies handler={this.handler}/>
+          <Search ref="child" handler={this.handler} searchWord={this.state.searchWord} />
+          <Graph graphname={this.state.ticker} datapoints={this.state.datapoints} datapoints2={this.state.datapoints2} />
+          <PopCompanies handler={this.handler} />
         </div>
         <Sidebar tickerName={this.state.ticker} setDatapoints2={this.setDatapoints2} setDatapoints={this.setDatapoints} />
       </div>
     )
   }
 }
-
 export default App

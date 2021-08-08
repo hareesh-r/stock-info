@@ -11,8 +11,7 @@ export default class Search extends Component {
             displayName: 'Stock Info'
         }
     }
- 
-     handleSearch(parameter) {
+    handleSearch(parameter) {
         fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${parameter}&apikey=CACFBGOGRJ9ZLNDH`)
             .then(response => response.json())
             .then(json => {
@@ -20,9 +19,7 @@ export default class Search extends Component {
                     if (json.bestMatches[0]['2. name'] != undefined) {
                         this.setState({ displayName: json.bestMatches[0]['2. name'] })
                         this.setState({ name: json.bestMatches[0]['1. symbol'] })
-                        console.log(json)
-                        console.log(this.state.name)
-                        this.props.handler(json.bestMatches[0]['2. name'],json.bestMatches[0]['1. symbol']);
+                        this.props.handler(json.bestMatches[0]['2. name'], json.bestMatches[0]['1. symbol']);
                     }
                 }
                 catch (err) {
@@ -30,10 +27,9 @@ export default class Search extends Component {
                 }
             })
     }
-    changeState(ticker,disnam){
-        this.setState({ name: ticker,displayName: disnam })
+    changeState(ticker, disnam) {
+        this.setState({ name: ticker, displayName: disnam })
     }
-    
     render() {
         return (
             <div className="Search">

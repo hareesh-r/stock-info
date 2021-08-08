@@ -17,7 +17,6 @@ export default class Graph extends Component {
         this.setState({ gradient })
     }
     render() {
-
         return (
             <div className="Graph">
                 <Line

@@ -27,6 +27,7 @@
     align-items: center;
     cursor: pointer;
 }
+
 .PopCompanies>div:hover {
     background-color: #51C58E;
     color: white;

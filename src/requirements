@@ -4,16 +4,6 @@ firebase login
 
 firebase init
 
-
-{
-  "hosting": {
-    "site": "stock-info",
-
-    "public": "public",
-    ...
-  }
-}
-
 firebase deploy --only hosting:stock-info
 
 npm install axios --save
@@ -21,10 +11,9 @@ npm install axios --save
 npm i styvio --save
 
 KBFYBLWQ3Y65L92Y
-KBFYBLWQ3Y65L92Y
 
 CACFBGOGRJ9ZLNDH - dev
 
- npm install react-chartjs-2 --save
+npm install react-chartjs-2 --save
 
 npm install --save react-chartjs-2 chart.js

@@ -35,7 +35,6 @@
     justify-content: space-evenly;
 }
 
-
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -55,24 +54,24 @@
     color: #818181;
     cursor: pointer;
     text-align: center;
-
 }
 
 .logo img {
     width: 100px;
 }
 
-.sidenav>div:hover,.activated {
+.sidenav>div:hover,
+.activated {
     background-color: #51C58E;
     border-radius: 10px;
     color: white;
     transition: all 0.3s ease-in-out;
 }
+
 .activated {
-    color: #000!important;
+    color: #000 !important;
     font-weight: bold;
 }
-
 
 .logo {
     display: flex;
@@ -89,7 +88,6 @@
     transition: all 0.3s ease-in-out;
 }
 
-
 @media screen and (max-width: 500px) {
     .sidenav {
         height: 60px;
@@ -99,7 +97,9 @@
         top: 80px;
         padding-top: 0px;
         overflow-y: hidden;
-    }.logo img {
+    }
+
+    .logo img {
         width: 50px;
     }
 }
