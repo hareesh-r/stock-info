@@ -16,7 +16,7 @@ export default class Search extends Component {
             .then(response => response.json())
             .then(json => {
                 try {
-                    if (json.bestMatches[0]['2. name'] != undefined) {
+                    if (json.bestMatches[0]['2. name'] !== undefined) {
                         this.setState({ displayName: json.bestMatches[0]['2. name'] })
                         this.setState({ name: json.bestMatches[0]['1. symbol'] })
                         this.props.handler(json.bestMatches[0]['2. name'], json.bestMatches[0]['1. symbol']);
