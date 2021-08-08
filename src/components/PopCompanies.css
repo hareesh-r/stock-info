@@ -20,3 +20,38 @@
     align-content: center;
     justify-content: space-evenly;
 }
+
+.PopCompanies>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .PopCompanies {
+        position: absolute;
+        bottom: 0;
+        height: 70px;
+        flex-direction: row;
+        left: 0px;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        cursor: grab;
+    }
+
+    .PopCompanies>div {
+        margin-left: 20px;
+    }
+
+    .PopCompanies>div:first-child {
+        margin-left: 1000px;
+    }
+}
+
+@media (max-width: 430px) {
+    .PopCompanies>div:first-child {
+        margin-left: 1100px;
+    }
+}

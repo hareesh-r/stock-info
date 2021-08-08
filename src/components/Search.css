@@ -14,7 +14,9 @@
     top: 0;
     z-index: 1;
 
-}.Search input {
+}
+
+.Search input {
     outline-width: 0px;
     border: 0.5px solid #000;
     padding: 10px;
@@ -23,15 +25,54 @@
     background-color: #FDFAFE;
     border-radius: 20px;
 
-}.Search button {
+}
+
+.Search button {
     padding: 10px;
     background-color: #000;
     border-radius: 20px;
     border: 0.5px solid #000;
-    color:#fff;
+    color: #fff;
     margin-left: -63px;
     cursor: pointer;
-}.Search h2 {
+}
+
+.Search h2 {
     position: absolute;
     left: 50px;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:500px) {
+    .Search {
+        width: 100vw;
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .Search h2 {
+        position: absolute;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width:990px) {
+
+    .Search input,
+    .Search button {
+        position: absolute;
+        right: 20px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .Search h2 {
+        display: none;
+    }
+
+    .Search input {
+        width: 80vw;
+    }
 }

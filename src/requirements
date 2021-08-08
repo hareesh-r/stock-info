@@ -23,3 +23,7 @@ npm i styvio --save
 KBFYBLWQ3Y65L92Y
 
 CACFBGOGRJ9ZLNDH - dev
+
+ npm install react-chartjs-2 --save
+
+npm install --save react-chartjs-2 chart.js

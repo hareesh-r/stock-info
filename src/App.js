@@ -5,11 +5,11 @@ import Search from "./components/Search"
 import Sidebar from './components/Sidebar';
 
 export class App extends Component {
-  constructor(){
-      super();
-      this.state={
-          searchWord: 'AAPL'
-      }
+  constructor() {
+    super();
+    this.state = {
+      searchWord: 'AAPL'
+    }
   }
 
   render() {
@@ -29,9 +29,9 @@ export class App extends Component {
 
         <Sidebar />
         <div className="main">
-            <Search />
-            <Graph />
-            <PopCompanies />
+          <Search />
+          <Graph />
+          <PopCompanies />
         </div>
       </div>
     )

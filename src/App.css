@@ -1,10 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Rubik','san-serif';
+  font-family: 'Rubik', 'san-serif';
 }
+
 .main {
   margin-left: 160px;
   background-color: #FDFAFE;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
 }
