@@ -8,8 +8,8 @@ export class App extends Component {
   constructor() {
     super();
     this.state = {
-      searchWord: '',
-      ticker: '',
+      searchWord: 'Stock Info',
+      ticker: 'Stock Info',
       datapoints: [],
       datapoints2: [],
     }

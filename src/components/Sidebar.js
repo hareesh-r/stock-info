@@ -17,8 +17,8 @@ export default class Sidebar extends Component {
                     arr.push(key)
                     arr2.push(json["Time Series (Daily)"][key]["2. high"])
                 }
-                this.props.setDatapoints(arr)
-                this.props.setDatapoints2(arr2)
+                this.props.setDatapoints(arr.reverse())
+                this.props.setDatapoints2(arr2.reverse())
 
             })
         document.getElementById("week").classList.remove("activated");
