@@ -8,6 +8,19 @@
     align-items: center;
     margin: 33px;
 }
+.btns {
+    display: flex;
+}
+.btns > button {
+    padding: 10px;
+    width: 100px;
+    color: white;
+    background-color: #51C58E;
+    border: none;
+    border-radius: 10px;
+    margin: 0px 30px;
+}
+
 
 @media screen and (max-width: 1026px) {
     .Graph {
@@ -18,7 +31,7 @@
 @media screen and (max-width: 500px) {
     .Graph {
         width: 95%;
-        top: 124px;
+        top: 139px;
         left: 0px;
         position: absolute;
         margin: 10px;

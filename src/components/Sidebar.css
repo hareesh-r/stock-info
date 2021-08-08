@@ -57,7 +57,7 @@
 }
 
 .logo img {
-    width: 100px;
+    width: 150px;
 }
 
 .sidenav>div:hover,
@@ -84,14 +84,14 @@
 }
 
 .logo:hover {
-    transform: scale(1.3);
+    transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
 }
 .content {
     position: absolute;
     left: 39%;
     top: 25%;
-    height: 325px;
+    height: 361px;
     width: 200px;
     background-color: #51C58E;
     color: white;

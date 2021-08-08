@@ -7,6 +7,7 @@ export default class Graph extends Component {
         super();
         this.state = {
             gradient: "",
+            line: true,
         }
     }
     componentDidMount() {
@@ -19,37 +20,65 @@ export default class Graph extends Component {
     render() {
         return (
             <div className="Graph">
-                <Line
-                    id="canvas"
-                    height={300}
-                    width={700}
-                    data={{
-                        labels: this.props.datapoints,
-                        datasets: [
-                            {
-                                fill: true,
-                                cubicInterpolationMode: "monotone",
-                                label: this.props.graphname,
-                                data: this.props.datapoints2,
-                                backgroundColor: this.state.gradient,
-                                borderColor: [
-                                    '#92CBAF',
+                <div className="btns">
+                    <button onClick={() => { this.setState({ line: false }) }}>Bar</button>
+                    <button onClick={() => { this.setState({ line: true }) }}>Line</button>
+                </div>
+                {
+                    this.state.line ? (
+                        <Line
+                            id="canvas"
+                            height={300}
+                            width={700}
+                            data={{
+                                labels: this.props.datapoints,
+                                datasets: [
+                                    {
+                                        fill: true,
+                                        cubicInterpolationMode: "monotone",
+                                        label: this.props.graphname,
+                                        data: this.props.datapoints2,
+                                        backgroundColor: this.state.gradient,
+                                        borderColor: [
+                                            '#92CBAF',
+                                        ],
+                                        borderWidth: 2,
+                                    },
                                 ],
-                                borderWidth: 2,
-                            },
-                        ],
-                    }}
-                    options={{
-                        maintainAspectRatio: false,
-                        scales: {
-                            y: {
-                                beginAtZero: true,
-                            }, animation: {
-                                duration: 0
-                            }
-                        }
-                    }}
-                />
+                            }}
+                            options={{
+                                maintainAspectRatio: false,
+                                
+                            }}
+                        />
+                    ) : (
+                        <Bar
+                            id="canvas"
+                            height={300}
+                            width={700}
+                            data={{
+                                labels: this.props.datapoints,
+                                datasets: [
+                                    {
+                                        fill: true,
+                                        cubicInterpolationMode: "monotone",
+                                        label: this.props.graphname,
+                                        data: this.props.datapoints2,
+                                        backgroundColor: this.state.gradient,
+                                        borderColor: [
+                                            '#92CBAF',
+                                        ],
+                                        borderWidth: 2,
+                                    },
+                                ],
+                            }}
+                            options={{
+                                maintainAspectRatio: false,
+                                
+                            }}
+                        />
+                    )
+                }
             </div>
         )
     }
