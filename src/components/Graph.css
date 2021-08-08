@@ -24,6 +24,26 @@
         position: absolute;
         margin: 10px;
         margin-top: 30px;
-        height: 70vh;
+        height: 65%;
+}
+    
+}
+@media screen and (max-height: 650px) {
+    .Graph {
+        height: 64vh;
+    }
+}@media screen and (max-height: 700px) {
+    .Graph {
+        height: 66vh;
+    }
+}
+@media screen and (max-height: 640px) {
+    .Graph {
+        height: 64vh;
+    }
+}
+@media screen and (max-height: 575px) {
+    .Graph {
+        height: 59vh;
     }
 }

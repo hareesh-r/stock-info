@@ -27,9 +27,11 @@ export default class Search extends Component {
                     this.setState({ displayName: "No results found", name: '' })
                 }
             })
- 
     }
 
+    changeState(ticker,disnam){
+        this.setState({ name: ticker,displayName: disnam })
+    }
     render() {
         return (
             <div className="Search">

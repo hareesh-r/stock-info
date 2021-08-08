@@ -9,28 +9,28 @@ export default class Sidebar extends Component {
     }
     activeDay(){
         console.log("asdfsdf")
-        document.getElementById("week").classList.remove("active");
-        document.getElementById("month").classList.remove("active");
-        document.getElementById("info").classList.remove("active");
-        document.getElementById("day").classList.add("active");
+        document.getElementById("week").classList.remove("activated");
+        document.getElementById("month").classList.remove("activated");
+        document.getElementById("info").classList.remove("activated");
+        document.getElementById("day").classList.add("activated");
     }
     activeMonth(){
-        document.getElementById("week").classList.remove("active");
-        document.getElementById("day").classList.remove("active");
-        document.getElementById("info").classList.remove("active");
-        document.getElementById("month").classList.add("active");
+        document.getElementById("week").classList.remove("activated");
+        document.getElementById("day").classList.remove("activated");
+        document.getElementById("info").classList.remove("activated");
+        document.getElementById("month").classList.add("activated");
     }
     activeWeek(){
-        document.getElementById("day").classList.remove("active");
-        document.getElementById("month").classList.remove("active");
-        document.getElementById("info").classList.remove("active");
-        document.getElementById("week").classList.add("active");
+        document.getElementById("day").classList.remove("activated");
+        document.getElementById("month").classList.remove("activated");
+        document.getElementById("info").classList.remove("activated");
+        document.getElementById("week").classList.add("activated");
     }
     activeInfo(){
-        document.getElementById("week").classList.remove("active");
-        document.getElementById("month").classList.remove("active");
-        document.getElementById("day").classList.remove("active");
-        document.getElementById("info").classList.add("active");
+        document.getElementById("week").classList.remove("activated");
+        document.getElementById("month").classList.remove("activated");
+        document.getElementById("day").classList.remove("activated");
+        document.getElementById("info").classList.add("activated");
     }
 
     render() {

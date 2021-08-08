@@ -18,7 +18,7 @@ export class App extends Component {
 
 
   componentDidUpdate(){
-    this.refs.child.handleSearch(this.state.ticker)
+    this.refs.child.changeState(this.state.ticker,this.state.searchWord)
   }
 
   render() {

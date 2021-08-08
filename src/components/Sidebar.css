@@ -54,6 +54,7 @@
     margin: 10px;
     color: #818181;
     cursor: pointer;
+    text-align: center;
 
 }
 
@@ -61,13 +62,13 @@
     width: 100px;
 }
 
-.sidenav>div:hover,.active {
+.sidenav>div:hover,.activated {
     background-color: #51C58E;
     border-radius: 10px;
     color: white;
     transition: all 0.3s ease-in-out;
 }
-.active {
+.activated {
     color: #000!important;
     font-weight: bold;
 }
