@@ -58,16 +58,20 @@
 }
 
 .logo img {
-    width: 48px;
+    width: 100px;
 }
 
-.sidenav>div:hover {
+.sidenav>div:hover,.active {
     background-color: #51C58E;
     border-radius: 10px;
     color: white;
     transition: all 0.3s ease-in-out;
-
 }
+.active {
+    color: #000!important;
+    font-weight: bold;
+}
+
 
 .logo {
     display: flex;
@@ -94,5 +98,7 @@
         top: 80px;
         padding-top: 0px;
         overflow-y: hidden;
+    }.logo img {
+        width: 50px;
     }
 }

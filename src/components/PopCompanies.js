@@ -32,30 +32,35 @@ export default class PopCompanies extends Component {
         });
     }
 
+    sendName(popStock){
+        console.log(popStock + "from pop")
+        this.props.handler(popStock);
+    }
+
     render() {
 
         return (
             <div className="PopCompanies scroll">
-                <div>Facebook</div>
-                <div>Apple</div>
-                <div>Netflix</div>
-                <div>Tesla</div>
-                <div>Tata</div>
-                <div>MicroSoft</div>
-                <div>Amazon</div>
-                <div>Zomato</div>
-                <div>Airtle</div>
-                <div>Vodafone</div>
-                <div>Reliance</div>
-                <div>Samsung</div>
-                <div>Infosys</div>
-                <div>TCS</div>
-                <div>HDFC Bank</div>
-                <div>Nestle</div>
-                <div>Mindtree</div>
-                <div>ONGC</div>
-                <div>ITC</div>
-                <div>Asian Paints</div>
+                <div onClick={()=>{this.sendName("Facebook")}}>Facebook</div>
+                <div onClick={()=>{this.sendName("Apple")}}>Apple</div>
+                <div onClick={()=>{this.sendName("Netflix")}}>Netflix</div>
+                <div onClick={()=>{this.sendName("Tesla")}}>Tesla</div>
+                <div onClick={()=>{this.sendName("Tata")}}>Tata</div>
+                <div onClick={()=>{this.sendName("MicroSoft")}}>MicroSoft</div>
+                <div onClick={()=>{this.sendName("Amazon")}}>Amazon</div>
+                <div onClick={()=>{this.sendName("Zomato")}}>Zomato</div>
+                <div onClick={()=>{this.sendName("Airtel")}}>Airtel</div>
+                <div onClick={()=>{this.sendName("Vodafone")}}>Vodafone</div>
+                <div onClick={()=>{this.sendName("Reliance")}}>Reliance</div>
+                <div onClick={()=>{this.sendName("Samsung")}}>Samsung</div>
+                <div onClick={()=>{this.sendName("Infosys")}}>Infosys</div>
+                <div onClick={()=>{this.sendName("TCS")}}>TCS</div>
+                <div onClick={()=>{this.sendName("HDFC Bank")}}>HDFC Bank</div>
+                <div onClick={()=>{this.sendName("Nestle")}}>Nestle</div>
+                <div onClick={()=>{this.sendName("Mindtree")}}>Mindtree</div>
+                <div onClick={()=>{this.sendName("ONGC")}}>ONGC</div>
+                <div onClick={()=>{this.sendName("ITC")}}>ITC</div>
+                <div onClick={()=>{this.sendName("Asian Paints")}}>Asian Paints</div>
             </div>
         )
     }
