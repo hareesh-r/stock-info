@@ -11,7 +11,7 @@ export default class Search extends Component {
             displayName: 'Stock Info'
         }
     }
-    handleSearch(parameter) {
+     handleSearch(parameter) {
         fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${parameter}&apikey=CACFBGOGRJ9ZLNDH`)
             .then(response => response.json())
             .then(json => {
@@ -20,13 +20,16 @@ export default class Search extends Component {
                         this.setState({ displayName: json.bestMatches[0]['2. name'] })
                         this.setState({ name: json.bestMatches[0]['1. symbol'] })
                         console.log(json)
+                        console.log(this.state.name)
                     }
                 }
                 catch (err) {
-                    this.setState({ displayName: "No results found" })
+                    this.setState({ displayName: "No results found", name: '' })
                 }
             })
+ 
     }
+
     render() {
         return (
             <div className="Search">

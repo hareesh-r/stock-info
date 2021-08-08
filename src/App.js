@@ -8,15 +8,17 @@ export class App extends Component {
   constructor() {
     super();
     this.state = {
-      searchWord: ''
+      searchWord: '',
+      ticker: ''
     }
   }
-  handler = (word) => {
-    this.setState({searchWord: word})
+  handler = (word,ticker) => {
+    this.setState({searchWord: word,ticker:ticker})
   }
 
+
   componentDidUpdate(){
-    this.refs.child.handleSearch(this.state.searchWord)
+    this.refs.child.handleSearch(this.state.ticker)
   }
 
   render() {
@@ -36,7 +38,7 @@ export class App extends Component {
         <div className="main">
           <Search ref="child" searchWord={this.state.searchWord}/>
           <Graph />
-          <PopCompanies handler={this.handler} />
+          <PopCompanies handler={this.handler}/>
         </div>
         <Sidebar />
       </div>
