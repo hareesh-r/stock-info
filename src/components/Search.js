@@ -12,7 +12,7 @@ export default class Search extends Component {
         }
     }
     handleSearch(parameter) {
-        fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${parameter}&apikey=CACFBGOGRJ9ZLNDH`)
+        fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${parameter}&apikey=KBFYBLWQ3Y65L92Y`)
             .then(response => response.json())
             .then(json => {
                 try {
