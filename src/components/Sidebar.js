@@ -29,6 +29,13 @@ export default class Sidebar extends Component {
             .then(response => response.json())
             .then(json => {
                 console.log(json)
+                try {
+                    if (json.Information === "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency.") {
+                        alert("Please try again in a minute or try to connect to a VPN");
+                    }
+                } catch (e) {
+                    console.log(e)
+                }
                 var arr = []
                 var arr2 = []
                 for (var key in json["Time Series (Daily)"]) {
@@ -49,6 +56,13 @@ export default class Sidebar extends Component {
             .then(response => response.json())
             .then(json => {
                 console.log(json)
+                try {
+                    if (json.Information === "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency.") {
+                        alert("Please try again in a minute or try to connect to a VPN");
+                    }
+                } catch (e) {
+                    console.log(e)
+                }
                 var arr = []
                 var arr2 = []
                 for (var key in json["Monthly Time Series"]) {
@@ -68,6 +82,13 @@ export default class Sidebar extends Component {
             .then(response => response.json())
             .then(json => {
                 console.log(json)
+                try {
+                    if (json.Information === "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency.") {
+                        alert("Please try again in a minute or try to connect to a VPN");
+                    }
+                } catch (e) {
+                    console.log(e)
+                }
                 var arr = []
                 var arr2 = []
                 for (var key in json["Weekly Time Series"]) {
@@ -88,8 +109,32 @@ export default class Sidebar extends Component {
                 .then(response => response.json())
                 .then(json => {
                     console.log(json)
-                    this.setState({ infoOBJ: json })
-                    this.setState({ show: true })
+                    try {
+                        if (json.Information === "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency.") {
+                            alert("Please try again in a minute or try to connect to a VPN");
+                            this.setState({
+                                infoOBJ: [{
+                                    "Global Quote": {
+                                        "01. symbol": "ZOMATO.BSE",
+                                        "02. open": "135.7000",
+                                        "03. high": "136.2000",
+                                        "04. low": "130.1000",
+                                        "05. price": "131.2000",
+                                        "06. volume": "2172173",
+                                        "07. latest trading day": "2021-08-06",
+                                        "08. previous close": "134.8500",
+                                        "09. change": "-3.6500",
+                                        "10. change percent": "-2.7067%"
+                                    }
+                                }]
+                            })
+                        }else{
+                            this.setState({ infoOBJ: json })
+                            this.setState({ show: true })
+                        }
+                    } catch (e) {
+                        console.log(e)
+                    }
                 })
         } else {
             this.setState({ show: false })
