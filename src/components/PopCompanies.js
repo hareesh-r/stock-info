@@ -44,7 +44,7 @@ export default class PopCompanies extends Component {
                 <div onClick={() => { this.sendName("MicroSoft", 'MSFT') }}>MicroSoft</div>
                 <div onClick={() => { this.sendName("Amazon", 'AMZN') }}>Amazon</div>
                 <div onClick={() => { this.sendName("Zomato", 'ZOMATO.BSE') }}>Zomato</div>
-                <div onClick={() => { this.sendName("Airtel", 'AAF.LON') }}>Airtel</div>
+                <div onClick={() => { this.sendName("Airtel", 'BHARTI') }}>Airtel</div>
                 <div onClick={() => { this.sendName("Vodafone", 'VOD') }}>Vodafone</div>
                 <div onClick={() => { this.sendName("Reliance", 'RELIANCE.BSE') }}>Reliance</div>
                 <div onClick={() => { this.sendName("Samsung", 'SMSN.LON') }}>Samsung</div>
