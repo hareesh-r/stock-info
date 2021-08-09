@@ -6,10 +6,6 @@ firebase init
 
 firebase deploy --only hosting:stock-info
 
-npm install axios --save
-
-npm i styvio --save
-
 KBFYBLWQ3Y65L92Y
 
 CACFBGOGRJ9ZLNDH - dev
