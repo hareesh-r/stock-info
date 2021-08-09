@@ -31,7 +31,9 @@ export default class Sidebar extends Component {
                 console.log(json)
                 try {
                     if (json.Information === "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency.") {
-                        alert("Please try again in a minute or try to connect to a VPN");
+                        alert("Please try to connect to a VPN");
+                    }else if(json.Note === "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency."){
+                        alert("Please try again in a minute");
                     }
                 } catch (e) {
                     console.log(e)
@@ -58,7 +60,9 @@ export default class Sidebar extends Component {
                 console.log(json)
                 try {
                     if (json.Information === "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency.") {
-                        alert("Please try again in a minute or try to connect to a VPN");
+                        alert("Please try to connect to a VPN");
+                    }else if(json.Note === "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency."){
+                        alert("Please try again in a minute");
                     }
                 } catch (e) {
                     console.log(e)
@@ -84,7 +88,9 @@ export default class Sidebar extends Component {
                 console.log(json)
                 try {
                     if (json.Information === "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency.") {
-                        alert("Please try again in a minute or try to connect to a VPN");
+                        alert("Please try to connect to a VPN");
+                    }else if(json.Note === "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency."){
+                        alert("Please try again in a minute");
                     }
                 } catch (e) {
                     console.log(e)
@@ -111,7 +117,7 @@ export default class Sidebar extends Component {
                     console.log(json)
                     try {
                         if (json.Information === "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency.") {
-                            alert("Please try again in a minute or try to connect to a VPN");
+                            alert("Please try to connect to a VPN");
                             this.setState({
                                 infoOBJ: [{
                                     "Global Quote": {
@@ -128,6 +134,8 @@ export default class Sidebar extends Component {
                                     }
                                 }]
                             })
+                        }else if(json.Note === "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency."){
+                            alert("Please try again in a minute");
                         }else{
                             this.setState({ infoOBJ: json })
                             this.setState({ show: true })
